@@ -5,6 +5,6 @@
 
 const nomes = ['Raphael', 'Amygdala', 'Aikoshima', 'Obscure', 'Pepsi Black'];
 
-nomes.forEach((nome) => {
+for (const nome of nomes) {
   console.log('Estudante:', nome);
-});
+}
