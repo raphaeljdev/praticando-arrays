@@ -16,4 +16,11 @@ const participantes = [
   { nome: 'Obscure', idade: 17 },
 ];
 
-const participantesMaioresDeIdade = participantes.filter();
+const autorizados = participantes.filter((p) => {
+  p.idade >= 18 ? console.log('Acesso liberado para', p.nome) : false;
+  return p.idade >= 18;
+});
+
+const aprovados = autorizados.map((p) => p.nome);
+
+console.log('Lista de aprovados:', aprovados);
